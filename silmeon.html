@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./jusil-icon.ico" />
+    <title>Comment s'appelle Julien ?</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <h1>Comment s'appelle Julien ?</h1>
+
+    <div class="clock">
+      <div class="clock__second"></div>
+      <div class="clock__minute"></div>
+      <div class="clock__hour"></div>
+      <div class="clock__axis"></div>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+      <section class="clock__indicator"></section>
+    </div>
+
+    <div class="numeric">
+      Il est <span id="numeric_clock"></span>, il faut donc appeler Julien :
+    </div>
+
+    <div id="nameFrame"></div>
+
+    <a href="https://www.instagram.com/julien_sil_/"
+      >Mais c'est qui en fait Julien ?</a
+    >
+
+    <script src="script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then((registration) => {
+            console.log(
+              "Service Worker registered with scope:",
+              registration.scope
+            );
+          })
+          .catch((error) => {
+            console.error("Service Worker registration failed:", error);
+          });
+      }
+    </script>
+  </body>
+</html>

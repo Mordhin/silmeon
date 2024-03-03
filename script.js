@@ -34,21 +34,26 @@ function updateClock() {
   clockElement.textContent = `${formatDigit(hours)}:${formatDigit(minutes)}`;
 
   const nameFrame = document.getElementById("nameFrame");
-  nameFrame.textContent = getName(hours);
+  nameFrame.textContent = getName(hours, minutes);
 }
 
 function formatDigit(digit) {
   return digit < 10 ? "0" + digit : digit;
 }
 
-function getName(hours) {
+function getName(hours, minutes) {
+  if (hours == 13 && minutes == 37) return "Benjamin \u{1F6B4}";
   if (hours >= 0 && hours < 4) {
     return "Porc de Nuit \u{1F437}";
   } else if (hours >= 4 && hours < 8) {
     return "Peter Pan \u{1F98A}";
-  } else if (hours >= 8 && hours < 12) {
+  } else if (hours >= 8 && hours < 11) {
     return "Solange \u{1F9B9}";
-  } else if (hours >= 12 && hours < 16) {
+  } else if (hours >= 11 && hours < 12) {
+    return "Demi-Sel \u{1F9C2}";
+  } else if (hours >= 12 && hours < 14) {
+    return "Annick \u{1F48B}";
+  } else if (hours >= 14 && hours < 16) {
     return "Myrtille \u{1F984}";
   } else if (hours >= 16 && hours < 20) {
     return "Fréjus \u{1F4A6}";
